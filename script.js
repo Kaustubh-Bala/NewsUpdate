@@ -1,10 +1,9 @@
-const API_KEY = '133fee506f4441b092965bebce29ada9';
-const URL = 'https://newsapi.org/v2/top-headlines?country=in';
-
-fetch(`${URL}&apiKey=${API_KEY}`)
+const API_KEY = 'e3976bb9c3e048e55d728100e06116df';
+const URL = 'https://gnews.io/api/v4/search?q=example&lang=en&country=in&max=10';
+fetch(`${URL}&apikey=${API_KEY}`)
   .then(response => {
     if (!response.ok) {
-      throw new Error('Network response was not ok');
+      throw new Error(`HTTP error! status: ${response.status}`);
     }
     return response.json();
   })
@@ -23,4 +22,5 @@ fetch(`${URL}&apiKey=${API_KEY}`)
   })
   .catch(error => {
     console.error(error);
+    // Handle the error appropriately
   });
