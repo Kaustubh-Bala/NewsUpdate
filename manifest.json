@@ -6,11 +6,7 @@
   "icons": {
     "128": "logo.jpg"
   },
-  "permissions": [
-    "http://*/*",
-    "https://*/*",
-    "activeTab"
-  ],
+  "permissions": ["activeTab"],
   "action": {
     "default_icon": "logo.jpg",
     "default_popup": "popup.html"
