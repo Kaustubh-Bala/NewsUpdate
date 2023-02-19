@@ -1,0 +1,18 @@
+{
+  "name": "Top News Headlines India",
+  "description": "Displays the top news headlines in India",
+  "version": "1.0",
+  "manifest_version": 3,
+  "icons": {
+    "128": "logo.jpg"
+  },
+  "permissions": [
+    "http://*/*",
+    "https://*/*",
+    "activeTab"
+  ],
+  "action": {
+    "default_icon": "logo.jpg",
+    "default_popup": "popup.html"
+  }
+}
